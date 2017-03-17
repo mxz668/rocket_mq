@@ -35,7 +35,7 @@ public class MessageListenerImpl implements MessageListener {
         String mBody = new String(message.getBody());
 
         model = JSON.parseObject(mBody, DataModel.class);
-        System.out.println(new Date() + " Receive message, Topic is:" +
+        System.out.println(" Receive message, Topic is:" +
                 message.getTopic() + ", MsgId is:" + message.getMsgID() + ",MsgBody:" + new String(message.getBody()));
         //如果想测试消息重投的功能,可以将Action.CommitMessage 替换成Action.ReconsumeLater
         return Action.CommitMessage;
