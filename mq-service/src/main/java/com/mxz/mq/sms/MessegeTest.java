@@ -21,6 +21,7 @@ public class MessegeTest {
 
     public static void main(String args[]) {
         try {
+
             IClientProfile profile = DefaultProfile.getProfile(regionId, accessKeyId, keySecret);
             DefaultProfile.addEndpoint("cn-hangzhou", "cn-hangzhou", "Sms", "sms.aliyuncs.com");
             IAcsClient client = new DefaultAcsClient(profile);
