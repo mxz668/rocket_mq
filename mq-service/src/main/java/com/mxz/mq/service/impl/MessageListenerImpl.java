@@ -30,6 +30,7 @@ import java.util.Date;
 public class MessageListenerImpl implements MessageListener {
     @Override
     public Action consume(Message message, ConsumeContext consumeContext) {
+
         DataModel model = new DataModel();
         String mBody = new String(message.getBody());
 
