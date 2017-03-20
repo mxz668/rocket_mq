@@ -97,6 +97,26 @@
             <version>3.0.0-rc1</version>
         </dependency>
         <!--阿里云短信-->
+
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
+        <!--引用本地包-->
+        <dependency>
+            <groupId>local.jar</groupId>
+            <artifactId>redis_search4j</artifactId>
+            <version>1.1.0</version>
+            <scope>system</scope>
+            <systemPath>E:/Maven/repository/local/jar/1.1.0/redis_search4j-1.1.0.jar</systemPath>
+        </dependency>
     </dependencies>
 
 </project>
