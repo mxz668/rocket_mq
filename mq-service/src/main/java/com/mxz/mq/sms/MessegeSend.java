@@ -12,7 +12,7 @@ import com.aliyuncs.sms.model.v20160927.SingleSendSmsResponse;
 /**
  * Created by MABIAO on 2017/3/17 0017.
  */
-public class MessegeTest {
+public class MessegeSend {
 
     private static final String regionId = "cn-hangzhou";
     private static final String accessKeyId = "LTAIHCgkz0SQn4c9";
