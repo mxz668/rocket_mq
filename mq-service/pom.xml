@@ -109,6 +109,12 @@
             <artifactId>jedis</artifactId>
         </dependency>
 
+        <!--kafka-->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.10</artifactId>
+        </dependency>
+
         <!--引用本地包-->
         <dependency>
             <groupId>local.jar</groupId>

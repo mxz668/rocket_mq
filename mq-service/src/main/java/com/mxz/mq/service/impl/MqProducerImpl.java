@@ -21,11 +21,11 @@ public class MqProducerImpl implements MqProducer{
     @Override
     public SendResult publishMsg(String msg) {
         DataModel model = new DataModel();
-        model.setId("26");
-        model.setName(msg);
+        model.setProductCode("100001");
+        model.setCollectStatus(16);
         String jsonString = JSON.toJSONString(model);
 
-        Message message = new Message("test_tianyu_demo","mq_test_tag",jsonString.getBytes());
+        Message message = new Message("FINCORE_CLUSTER_TOPIC","PMS_PRODUCT_STATUS_CHANGE",jsonString.getBytes());
         SendResult sendResult = producer.send(message);
         if (sendResult != null){
             System.out.println("Success");

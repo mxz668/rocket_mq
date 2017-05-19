@@ -5,14 +5,14 @@
         init-method="start" destroy-method="shutdown">
         <property name="properties">
             <map>
-                <entry key="ProducerId" value="PID_test_tianyu" /> <!-- PID,请替换 -->
-                <entry key="AccessKey" value="LTAIHCgkz0SQn4c9" /> <!-- ACCESS_KEY,请替换 -->
-                <entry key="SecretKey" value="G8I2BpLp9iC5Wx0J6nlmrvkjacqAKt" /> <!-- SECRET_KEY,请替换 -->
-                <!--PropertyKeyConst.ONSAddr 请根据不同Region进行配置
-                 公网测试: http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet
-                 公有云生产: http://onsaddr-internal.aliyun.com:8080/rocketmq/nsaddr4client-internal
-                 杭州金融云: http://jbponsaddr-internal.aliyun.com:8080/rocketmq/nsaddr4client-internal
-                 深圳金融云: http://mq4finance-sz.addr.aliyun.com:8080/rocketmq/nsaddr4client-internal -->
+                <!--<entry key="ProducerId" value="PID_test_tianyu" /> &lt;!&ndash; PID,请替换 &ndash;&gt;
+                <entry key="AccessKey" value="LTAIHCgkz0SQn4c9" /> &lt;!&ndash; ACCESS_KEY,请替换 &ndash;&gt;
+                <entry key="SecretKey" value="G8I2BpLp9iC5Wx0J6nlmrvkjacqAKt" /> &lt;!&ndash; SECRET_KEY,请替换 &ndash;&gt;
+                <entry key="ONSAddr" value="http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet"/>-->
+
+                <entry key="ProducerId" value="PID_FINCORE_CLUSTER_TOPIC" /> <!-- PID,请替换 -->
+                <entry key="AccessKey" value="LTAIsz0wLSgsBluZ" /> <!-- ACCESS_KEY,请替换 -->
+                <entry key="SecretKey" value="lQ74ZBAatZBlJcQSV3PoZaVKTFGy4P" /> <!-- SECRET_KEY,请替换 -->
                 <entry key="ONSAddr" value="http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet"/>
             </map>
         </property>

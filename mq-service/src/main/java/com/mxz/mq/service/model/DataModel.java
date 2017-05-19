@@ -5,23 +5,23 @@ package com.mxz.mq.service.model;
  */
 public class DataModel {
 
-    private String id;
+    private String productCode;
 
-    private String name;
+    private Integer collectStatus;
 
-    public String getId() {
-        return id;
+    public String getProductCode() {
+        return productCode;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
     }
 
-    public String getName() {
-        return name;
+    public Integer getCollectStatus() {
+        return collectStatus;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCollectStatus(Integer collectStatus) {
+        this.collectStatus = collectStatus;
     }
 }
